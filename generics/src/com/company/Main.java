@@ -21,6 +21,13 @@ public class Main {
 
         Team<SoccerPlayer> soccerTeam = new Team<>("Real Madrid");
         soccerTeam.addPlayer(beckham);
+
+        Team<SoccerPlayer> soccerTeam2 = new Team<>("Barcelona");
+
+//        soccerTeam.matchResult(baseballTeam, 5, 1);
+
+        soccerTeam.matchResult(soccerTeam2, 5, 1);
+        System.out.println(soccerTeam.ranking());
     }
 
 }
